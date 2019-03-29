@@ -100,8 +100,9 @@ nav li:first-child {
 
 .sidebar {
 	/* Step #1: Using the transform property, move the sidebar off screen by default (hint: look up translateX)*/
-
+transform: translateX(-300px);
   /* Step #2: Add CSS transition here so that ALL properties we change will animate/transition */
+transition: all 2s linear;
 }
 
 /*	Step #3 (in main.js): Toggle the .active class on the .sidebar when the hamburger icon is clicked. 
@@ -109,6 +110,6 @@ There are no styles below yet, so check your "Inspect" panel and see if the clas
 */
 .active {
 	/*	Step #4: When the active class gets added to the sidebar, we want to move the sidebar back on screen using the transform property (translateX). */
-
-
+transform: translateX(0px);
+transition: all 2s linear;
 }

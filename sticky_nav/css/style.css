@@ -59,6 +59,7 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
+  
 }
 
 nav {
@@ -94,8 +95,9 @@ nav .active {
 
 .scrolled {
   /* PART 1: Write styles here to convert the nav into a sticky nav. */
-  
-
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 
 
@@ -140,19 +142,19 @@ img {
 }
 
 
+
+
 /* ---------------------------------------------------------
     B U T T E R F L Y
   ---------------------------------------------------------- */
 .butterfly {
   width: 600px;
-  /* PART 3: Uncomment the following code to hide the 
+  /* PART 2: Uncomment the following code to hide the 
   butterfly and move it slightly to the left by default.*/
-/*   transform: translateX(-20%);
+  transform: translateX(-20%);
   opacity: 0;
-  transition: all .5s ease-in-out; */
+  transition: all .5s ease-in-out; 
 }
-
-
 .animated {
   /* PART 3: Add the animated class to the .butterfly when the user has scrolled to that section of the page. */
   /* Here, when the animated class gets added, we want to update the opacity to 1 
